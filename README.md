@@ -11,26 +11,7 @@ This Utility provide log features to track all execution of complex codes, modul
  All the Exception related info as well as all the messages will be available in which User/Programmer(s) want to track
 
  # How to use this Logger Class?
- Please follow below steps:
-     1. Change namespace of this class and change to <your_module_namespace>.
-     2. Provide file path in which file will be created, for that assign variables.
-         e.g. 
-             #region Variable Declaration
-             static string logPath = @"C:\User\Desktop\"; <provide_your_path_in_your_module>.
-             static string logFileName = "logs_dd_mm_yyyy.log"; <provide_your_log_file_name_in_your_module>.
-             #endregion
-     3. Write Log statement in your code to track details.
-           e.g.
-               Logger.LogFileWrite("Main method Started", logPath);
-               Logger.LogFileWrite("Variable value: " + "value1", logPath);
-               Logger.LogFileWrite("Main method Ended", logPath);
-               Logger.LogFileWrite("Variable value after method called: " + "value2", logPath);
-     4. Write Log statement with Exception in catch block of your code.
-           e.g.
-               Logger.Log(exception.Message, logPath);
-               Logger.Log(exception.ToString(), logPath);
-               Logger.Log("Exception caught in demo catch block :: ", logPath);
-     5. Observe the file !
+ Please find help.txt file for usage of this utility.
 
  # Can anyone modify this Class?
  Ofcourse, Anyone can modify for custom logics.
